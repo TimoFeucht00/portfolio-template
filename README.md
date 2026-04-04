@@ -2,12 +2,22 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
 
-## Development server
+## Getting Started
 
-To start a local development server, run:
+Follow these steps after cloning the repository for the first time.
+
+### 1. Install dependencies
 
 ```bash
-ng serve
+yarn install
+```
+
+### 2. Start development server
+To start a local development server, run:
+
+
+```bash
+yarn start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
