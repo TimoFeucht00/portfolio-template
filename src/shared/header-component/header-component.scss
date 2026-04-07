@@ -2,15 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 var(--page-padding-x);
   height: 64px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--color-bg, #fff);
-  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  background-color: black;
   box-sizing: border-box;
 
   &__logo {
@@ -21,8 +20,19 @@
   &__logo-icon {
     width: 32px;
     height: 32px;
-    color: var(--color-accent, #6366f1);
     cursor: pointer;
+    fill: none;
+  }
+
+  &__logo-bg {
+    fill: url(#my-gradient);
+  }
+
+  &__logo-text {
+    fill: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
   }
 
   &__nav {
@@ -34,7 +44,7 @@
   &__nav-link {
     font-size: 0.9375rem;
     font-weight: 500;
-    color: var(--color-text, #374151);
+    color: white;
     text-decoration: none;
     transition: color 0.2s ease;
 

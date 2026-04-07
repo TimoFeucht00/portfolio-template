@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {RouterService} from '../../app/services/router.service';
 
 @Component({
   selector: 'app-header',
@@ -6,4 +7,32 @@ import { Component } from '@angular/core';
   templateUrl: './header-component.html',
   styleUrl: './header-component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  private routerService = inject(RouterService);
+
+
+  protected navigateToHome() {
+    this.routerService.navigateToHome();
+  }
+
+  protected navigateToProjects() {
+    this.routerService.navigateToProjects();
+  }
+
+  protected navigateToAbout() {
+    this.routerService.navigateToAbout();
+  }
+
+  protected navigateToCV() {
+    this.routerService.navigateToCV();
+  }
+
+  protected navigateToContact() {
+    this.routerService.navigateToContact();
+  }
+
+  protected navigateToSettings() {
+    this.routerService.navigateToSettings();
+  }
+
+}

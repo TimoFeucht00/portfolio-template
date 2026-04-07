@@ -1,0 +1,13 @@
+.page-container {
+  padding-top: var(--header-height);
+  padding-bottom: var(--header-height);
+  padding-left: var(--page-padding-x);
+  padding-right: var(--page-padding-x);
+  min-height: 100dvh;
+  box-sizing: border-box;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

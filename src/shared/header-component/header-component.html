@@ -4,11 +4,9 @@
       class="header__logo-icon"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      fill="none"
       aria-label="Logo"
       role="img"
     >
-
       <defs>
         <linearGradient id="my-gradient" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stop-color="#F0070C"/>
@@ -17,16 +15,18 @@
         </linearGradient>
       </defs>
 
-      <rect width="32" height="32" rx="8" fill="url(#my-gradient)"/>
-      <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
-            fill="white" font-size="14" font-family="sans-serif" font-weight="700">KB
-      </text>
+      <rect class="header__logo-bg" width="32" height="32" rx="8"/>
+      <text class="header__logo-text" x="50%" y="50%" dominant-baseline="central" text-anchor="middle">KB</text>
     </svg>
   </div>
 
   <nav class="header__nav" aria-label="Main navigation">
-    <a class="header__nav-link" href="#about">About me</a>
-    <!--Add more links if needed-->
+    <a class="header__nav-link" (click)="navigateToHome()">Home</a>
+    <a class="header__nav-link" (click)="navigateToProjects()">Projects</a>
+    <a class="header__nav-link" (click)="navigateToAbout()">About</a>
+    <a class="header__nav-link" (click)="navigateToCV()">CV</a>
+    <a class="header__nav-link" (click)="navigateToContact()">Contact</a>
+    <a class="header__nav-link" (click)="navigateToSettings()">Settings</a>
   </nav>
 </header>
 
