@@ -37,7 +37,9 @@ This is an Angular 21 portfolio template using TypeScript and SCSS. It is a **UI
 - Always style components with SCSS, no inline styles in HTML files
 - Use descriptive BEM-style classes for SCSS, avoid generic names like `.container` or `.box`
 - Use SCSS variables for colors, fonts, spacing, and breakpoints
-- Add all styling to `src/shared/shared-styles.scss` - only if the styles are exclusively used by a single component, then add them to that component's SCSS file
+- Add all styling to `src/shared/shared-styles.scss` 
+  - use a prefix `shared-` for all classes in this file to avoid conflicts and increse readability (example: `shared-h1`)
+  - only if the styles are exclusively used by a single component, then add them to that component's SCSS file
 - Support both light and dark mode using CSS custom properties
 - Ensure the layout is fully responsive (mobile-first approach)
 
